@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.header{
+    padding: 40px 0;
+    margin-bottom: 50px;
+
+}
+.logo{
+    display: block;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+}
+h1,h3{
+    font-weight: 700;
+}
+p{
+    line-height: 120%;
+    font-weight: 400;
+}
+.menu__link{
+    color: #fff;
+    padding: 10px 15px;
+    background-color: cadetblue;
+    transition: all .3s;
+}
+.menu__link:hover{
+    background-color: black;
+   
+}
+.inform{
+    margin-bottom: 75px;
+}
+.inform__title{
+    color: cadetblue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.inform__text + .inform__text{
+margin-top: 20px;
+}
+.sport-men{
+    margin-bottom: 75px;
+}
+.sport-men__blok{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.sport-men__box{
+    max-width: 60%;
+}
+.sport-men__img{
+    width: 450px;
+    height: 300px;
+}
+.sport-men__title{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: cadetblue;
+    margin-bottom: 15px;
+}
+.sport-men__text{
+    line-height: 120%;
+}
+.sport-men__text + .sport-men__text{
+    margin-top: 15px;
+}
+.coment{
+    margin-bottom: 75px;
+}
+.coment__iner{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.coment__box{
+    max-width: 33%;
+}
+.coment__title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.coment__text{
+    margin-bottom: 15px;
+}
+.footer{
+    padding: 40px 0;
+    background-color: cadetblue;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 1025px) {
+    .coment__text{
+        font-size: 20px;
+    }
+    .coment__title{
+        font-size: 26px;
+    }
+}
+@media (max-width: 840px) {
+    .sport-men__blok{
+        display: block;
+    }
+    .sport-men__img{
+        display: block;
+        margin: 0 auto;
+    }
+    .sport-men__box{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .sport-men__title{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .coment__iner{
+        display: block;
+        
+    }
+    .coment__box{
+        max-width: 100%;
+    }
+}
+@media (max-width: 780px) {
+.menu{
+    flex-wrap: wrap;
+}
+.inform__title{
+    font-size: 45px;
+}
+.inform__text{
+    font-size: 20px;
+}
+.sport-men__text{
+    font-size: 20px;
+}
+}
+@media (max-width: 490px) {
+    .sport-men__img{
+        width: 100%;
+    }
+    .sport-men__title{
+        font-size: 20px;
+    }
+    .coment__text{
+        font-size: 16px;
+    }
+    .coment__title{
+        font-size: 24px;
+    }
+}
+@media (max-width: 430px) {
+.logo{
+    display: none;
+}
+.inform__title{
+    font-size: 35px;
+}
+.inform__text{
+    font-size: 16px;
+}
+.sport-men__text{
+    font-size: 15px;
+}
+}
